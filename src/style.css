@@ -1,0 +1,70 @@
+@layer reset, main, reducedmotion;
+
+@import url("noicss.reset") layer(reset);
+@import url("noicss.reducedmotion") layer(reducedmotion);
+
+@layer main {
+  :root {
+    --accentColor: #0358a9;
+    --textColor: #191919;
+    --bgColor: #fff;
+    --hoverColor: #f0f8ff;
+    --errorColor: #f53223;
+    --borderThickness: 2px;
+    --borderRadius: 3px;
+    --infinity: calc(infinity * 1px);
+    --highlightedTextColor: var(--bgColor);
+
+    scrollbar-gutter: auto;
+
+    @media screen and (width > 1400px) {
+      scrollbar-gutter: stable both-edges;
+    }
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--textColor);
+    font-family: Lato, Avenir, "Adobe Heiti Std", "Helvetica Neue", Helvetica, "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+    background-color: var(--bgColor);
+  }
+
+  .btn {
+    padding: 0.5em 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2em;
+    color: var(--hoverColor);
+    font-weight: 700;
+    border: 2px solid var(--accentColor);
+    border-radius: var(--borderRadius);
+    background-color: var(--accentColor);
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+
+    &:is(:hover, :focus-visible) {
+      color: var(--accentColor);
+      background-color: var(--hoverColor);
+    }
+
+    &:focus-visible {
+      outline: medium solid var(--accentColor);
+    }
+  }
+
+  main {
+    width: min(100%, 800px);
+  }
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "uxaudit",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "license": "GLWTS",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "browserslist": "^4.x.x",
+    "lightningcss": "^1.x.x",
+    "vite": "^7.x.x"
+  },
+  "dependencies": {
+    "noicss.reset": "^1.x.x",
+    "noicss.reducedmotion": "^1.x.x"
+  }
+}
