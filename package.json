@@ -10,12 +10,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "browserslist": "^4.x.x",
-    "lightningcss": "^1.x.x",
-    "vite": "^7.x.x"
+    "browserslist": "^4.25.1",
+    "lightningcss": "^1.30.1",
+    "vite": "^7.1.0"
   },
   "dependencies": {
-    "noicss.reset": "^1.x.x",
-    "noicss.reducedmotion": "^1.x.x"
+    "noicss.reducedmotion": "^1.0.2",
+    "noicss.reset": "^1.10.2"
   }
 }
