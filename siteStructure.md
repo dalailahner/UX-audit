@@ -15,7 +15,12 @@
 - layout shift (Lia mail "Grundsätzliches...")
 - ads are too intrusive (Lia mail "Auch ist es komisch...")
 - sn.at homepage ist mittig, Unterseite eines Redakteurs, Profil, karriere, immo, ... sind linksbündig (Lia mail "Dazu fällt mir immer wieder negativ auf...")
-- personalisierung (Themen im home feed, Lesezeichen, light/dark theme, ...)
+- personalisierung
+  - Themen im home feed
+  - Lesezeichen
+  - light/dark theme
+  - personalisierbares Menü && oberste Zeile im Menü mit "Letzte" mit den zuletzt geklickten Menüpunkten.
+  - ...
 - störende Elemente im Textfluss
 - help users recognize & recover from errors (error msgs bei formularen)
 - text
