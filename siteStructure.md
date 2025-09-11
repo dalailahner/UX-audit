@@ -1,10 +1,13 @@
-#### To Dos:
+## To Dos:
 
 - (mails von michael und lia noch einarbeiten)
-- [intrusive ads](https://www.anstrex.com/blog/intrusive-online-advertising-where-do-we-draw-the-ethical-line) link einbauen für "click bait werbung (mail von michael)"
 - struktur ordnen
 
-#### Structure _(ungeordnet)_:
+## Structure _(ungeordnet)_:
+
+Einige Punkte zur sortierung der Inhalte für die Seite.
+
+### Topic
 
 - navigation
   - (touch, mouse, keyboard, screen reader)
@@ -13,8 +16,23 @@
   - search
 - click/touch target sizes (Fitt's Law)
 - layout shift (Lia mail "Grundsätzliches...")
+
+### Werbung
+
 - ads are too intrusive (Lia mail "Auch ist es komisch...")
+  - [intrusive ads](https://www.anstrex.com/blog/intrusive-online-advertising-where-do-we-draw-the-ethical-line)
+  - [Coalition for Better Ads](https://www.betterads.org/standards/)
+- unseriöse Werbung zerstört Ruf. "click bait werbung" (mail von michael)
+
+### Visual Consistency
+
 - sn.at homepage ist mittig, Unterseite eines Redakteurs, Profil, karriere, immo, ... sind linksbündig (Lia mail "Dazu fällt mir immer wieder negativ auf...")
+- gleiche Elemente sehen unterschiedlich aus. Keine klare Linie im Design.
+  - dadurch entsteht weniger Glaubwürdigkeit und wirkt unseriös. (bin ich auf einer Phishing Seite gelandet? - Effekt)
+  - Abhilfe schafft: Styleguide mit definierten Attributen (Farben, Abstände, Timings, ect.) und Status (standard, hover, disabled, focused, active, ...). Sichtbar in live component library.
+
+### TOPIC
+
 - personalisierung
   - Themen im home feed
   - Lesezeichen
