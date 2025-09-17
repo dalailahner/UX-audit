@@ -5,7 +5,7 @@
 
 ## Structure _(ungeordnet)_:
 
-Einige Punkte zur sortierung der Inhalte für die Seite.
+Einige Punkte zur Sortierung der Inhalte für die Seite.
 
 ### Topic
 
@@ -15,30 +15,51 @@ Einige Punkte zur sortierung der Inhalte für die Seite.
   - menus
   - search
 - click/touch target sizes (Fitt's Law)
-- layout shift (Lia mail "Grundsätzliches...")
 
 ### Werbung
 
-- ads are too intrusive (Lia mail "Auch ist es komisch...")
+- intrusive Ads (Lia "UI/UX-mäßig ist es..." & "Auch ist es komisch..."; Michael "große Werbung")
+  - layout shift
   - [intrusive ads](https://www.anstrex.com/blog/intrusive-online-advertising-where-do-we-draw-the-ethical-line)
   - [Coalition for Better Ads](https://www.betterads.org/standards/)
-- unseriöse Werbung zerstört Ruf. "click bait werbung" (mail von michael)
+- unseriöse Werbung schädigt eigene Seriösität und Qualität. (Michael "click bait Werbung...")
 
 ### Visual Consistency
 
-- sn.at homepage ist mittig, Unterseite eines Redakteurs, Profil, karriere, immo, ... sind linksbündig (Lia mail "Dazu fällt mir immer wieder negativ auf...")
-- gleiche Elemente sehen unterschiedlich aus. Keine klare Linie im Design.
-  - dadurch entsteht weniger Glaubwürdigkeit und wirkt unseriös. (bin ich auf einer Phishing Seite gelandet? - Effekt)
-  - Abhilfe schafft: Styleguide mit definierten Attributen (Farben, Abstände, Timings, ect.) und Status (standard, hover, disabled, focused, active, ...). Sichtbar in live component library.
+gleiche Elemente sehen unterschiedlich aus. Keine klare Linie im Design.
+
+- consistent styling (podcast widget, video thumbnail img, Karriere widget, Artikel carousel btns, pinpoll, Gaue Tabs, ...)
+- dadurch entsteht weniger Glaubwürdigkeit und wirkt unseriös. (bin ich auf einer Phishing Seite gelandet? - Effekt)
+- sn.at homepage ist mittig, Unterseite eines Redakteurs, Profil, Fotoblog, karriere, immo, ... sind linksbündig (Lia mail "Dazu fällt mir immer wieder negativ auf...")
+- 3rd Party / SaaS Integrationen (auch teilweise fehlerhaft (Michael "die Pinpoll Umfrage..."))
+
+LÖSUNG:
+
+- Styleguide mit definierten Attributen (Farben, Abstände, Timings, ect.) und Status (standard, hover, disabled, focused, active, ...). Sichtbar in live component library.
+
+### Redesigns
+
+- Login (Michael "diverse Login Themen")
+  - besser strukturieren
+  - Login vs Registrieren als tabs bzw. visuell besser erkennbar und underscheidbar machen
+  - "oder" vor dem Google Login
+  - ...
+
+# TODO: DO BIN I STEH BLIEM
+
+- Suche (Lia "Website-Suche:...")
+
+### Personalisierung
+
+- user kann aussuchten welche Themen im home feed hauptsächlich erscheinen
+- Lesezeichen (auch dementsprechend anbieten, mit overlay bei hover bei Artikeln, ect.)
+- light/dark theme
+- personalisierbare items im hamburger Menü && oberste Zeile im Menü mit "Letzte" mit den zuletzt geklickten Menüpunkten.
+- Einstellung für Anzahl & Themen der notifications (tägliche oder wöchentliche Zusammenfassung abonnierter Themen (mit Auswahl des Tages & Uhrzeit) und nicht einfach mit 20 random notifications zuscheißen)
+- ...
 
 ### TOPIC
 
-- personalisierung
-  - Themen im home feed
-  - Lesezeichen
-  - light/dark theme
-  - personalisierbares Menü && oberste Zeile im Menü mit "Letzte" mit den zuletzt geklickten Menüpunkten.
-  - ...
 - störende Elemente im Textfluss
 - help users recognize & recover from errors (error msgs bei formularen)
 - text
@@ -48,7 +69,13 @@ Einige Punkte zur sortierung der Inhalte für die Seite.
   - color-contrast
 - visual structure ("heute vor..." has scrollbar but no visual container)
 - icons verwenden die die richtige bedeutung haben "opens in new tab" icons zb. (Jacobs Law)
-- consistent styling (podcast widget, video thumbnail img, Karriere widget, Artikel carousel btns, pinpoll, Gaue Tabs, ...)
 - img sizes (hidpi displays, Artikel 2/3 Kästchen breit, podcast img test, ...)
 - interaction feedback (animations & transitions while interacting, status msgs, toasts)
 - Lighthouse & other metrics
+
+### Redundantes
+
+- WebPush button WEG
+- accessability button (bzw. ganzes tool) WEG
+- Abonnenten Werbung auszuspielen ist das Allerletzte. Hilft auch kein "das ist nicht das Produkt", "Gibt eh PUR Abo" oder "bei X oder Y ists auch so". Wobei, wer so Argumente bringt sowieso sein gesamtes Weltbild hinterfragen soll und bitte zum Wohle der Menschheit den Zwang unterdrücken mögen wenn sie den Mund aufmachen möchten.
+- Druckversion von "Artikel drucken" ist absolut fucked. Lösung: Bei Klick CSS nachladen (@layer druck), damit nicht bei jedem Seitenaufruf das "Druck" CSS geladen wird.
