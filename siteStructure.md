@@ -30,7 +30,7 @@ gleiche Elemente sehen unterschiedlich aus. Keine klare Linie im Design.
 
 - consistent styling (podcast widget, video thumbnail img, Karriere widget, Artikel carousel btns, pinpoll, Gaue Tabs, ...)
 - dadurch entsteht weniger Glaubwürdigkeit und wirkt unseriös. (bin ich auf einer Phishing Seite gelandet? - Effekt)
-- sn.at homepage ist mittig, Unterseite eines Redakteurs, Profil, Fotoblog, karriere, immo, ... sind linksbündig (Lia mail "Dazu fällt mir immer wieder negativ auf...")
+- sn.at homepage ist mittig, Unterseite eines Redakteurs, Profil, Suche, Fotoblog, karriere, immo, ... sind linksbündig (Lia mail "Dazu fällt mir immer wieder negativ auf...")
 - 3rd Party / SaaS Integrationen (auch teilweise fehlerhaft (Michael "die Pinpoll Umfrage..."))
 
 LÖSUNG:
@@ -40,14 +40,21 @@ LÖSUNG:
 ### Redesigns
 
 - Login (Michael "diverse Login Themen")
-  - besser strukturieren
-  - Login vs Registrieren als tabs bzw. visuell besser erkennbar und underscheidbar machen
-  - "oder" vor dem Google Login
-  - ...
 
-# TODO: DO BIN I STEH BLIEM
+  - besser strukturieren
+  - kein "Login" oder "Registrieren" sondern nur "Anmelden" mit email Feld und via API call automatisch "Login" oder "Registrieren" anzeigen.
+  - Passkeys als default verwenden (bzw. passwordless bevorzugen)
+  - Passwort nur als letzte möglichkeit wenn die alternativen nicht verfügbar sind oder manuell "mit Passwort einloggen" ausgewählt wird.
+    - "Passwort vergessen" direkt zum Passwort input.
+  - verwendung von Password-Managers optimieren (siehe [hier](https://auth0.com/blog/an-accessible-guide-to-wcag-3-3-8-authentication-without-frustration/#:~:text=5.%20Embrace%20password%20managers%20and%20copy%2Dpaste))
+  - "oder" vor dem Google Login
+  - letzte Seite "Herzlich Willkommen" nicht anzeigen weils direkt verschwindet und die buttons dadurch nicht benutzt werden können. (Besser wäre ein kurz erscheinender tooltip beim Profil-Icon)
 
 - Suche (Lia "Website-Suche:...")
+
+  - info der verwendbaren such-parameter unter der suchmaske bei eingabe
+  - link zu "erweiterte Suche" (eigene seite)
+  - zeitstrahl weg und generell eine "Filter" section über den Suchergebnissen machen
 
 ### Personalisierung
 
@@ -71,7 +78,15 @@ LÖSUNG:
 - icons verwenden die die richtige bedeutung haben "opens in new tab" icons zb. (Jacobs Law)
 - img sizes (hidpi displays, Artikel 2/3 Kästchen breit, podcast img test, ...)
 - interaction feedback (animations & transitions while interacting, status msgs, toasts)
+
+### Performance
+
+- implement [Signed HTTP Exchanges (SXG)](https://developer.chrome.com/blog/signed-exchanges) with [nginx-sxg-module](https://github.com/google/nginx-sxg-module). (10 part Blog post about SXG starting [here](https://www.pawelpokrywka.com/p/how-i-took-lcp-down-under-350ms))
 - Lighthouse & other metrics
+- Fonts richtig laden
+  - man braucht kein "latin" wenn bereits "latin-ext" geladen wird (und auch sicher gebraucht wird)
+  - fonts nicht im css laden sondern direkt im head prefetchen
+  - (blog beitrag aus obsidian einfügen)
 
 ### Redundantes
 
