@@ -23,6 +23,7 @@ Einige Punkte zur Sortierung der Inhalte für die Seite.
   - [intrusive ads](https://www.anstrex.com/blog/intrusive-online-advertising-where-do-we-draw-the-ethical-line)
   - [Coalition for Better Ads](https://www.betterads.org/standards/)
 - unseriöse Werbung schädigt eigene Seriösität und Qualität. (Michael "click bait Werbung...")
+- Ich denke es spricht auch für sich selbst, wenn man als selbstbestimmtes "Qualitätsmedium" mehr und intrusivere Werbung auf seiner Website schaltet als jede virenverseuchte Piraterie-Seite im Netz.
 
 ### Visual Consistency
 
@@ -42,7 +43,6 @@ LÖSUNG:
 TODO NEXT: Lia mail "Login-Maske"
 
 - Login (Michael "diverse Login Themen")
-
   - besser strukturieren
   - kein "Login" oder "Registrieren" sondern nur "Anmelden" mit email Feld und via API call automatisch "Login" oder "Registrieren" anzeigen.
   - Passkeys als default verwenden (bzw. passwordless bevorzugen)
@@ -53,7 +53,6 @@ TODO NEXT: Lia mail "Login-Maske"
   - letzte Seite "Herzlich Willkommen" nicht anzeigen weils direkt verschwindet und die buttons dadurch nicht benutzt werden können. (Besser wäre ein kurz erscheinender tooltip beim Profil-Icon)
 
 - Suche (Lia "Website-Suche:...")
-
   - info der verwendbaren such-parameter unter der suchmaske bei eingabe (wie bei [GitHub](https://blog.logrocket.com/wp-content/uploads/2024/01/Query-syntax-based-search.png))
   - Bei Suche ohne Ergebnisse -> Vorschläge machen welche suchparameter zu ändern um Ergebnisse zu bekommen
   - link zu "erweiterte Suche" (eigene Seite mit Filtern ect.)
